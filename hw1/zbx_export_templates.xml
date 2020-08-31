@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2020-08-31T09:08:44Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template important metrics</template>
+            <name>Template important metrics</name>
+            <description>template for important metrics</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>important.metrics</name>
+                    <key>important.metrics</key>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>important metrics - {#METRICNAME}</name>
+                            <type>TRAP</type>
+                            <key>otus_important_metrics[{#METRICNAME}]</key>
+                            <delay>0</delay>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <expression>{last()}&gt;=95</expression>
+                                    <name>important metrics trigger - {#METRICNAME}</name>
+                                    <priority>AVERAGE</priority>
+                                    <manual_close>YES</manual_close>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <name>important metrics - {#METRICNAME}</name>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <drawtype>FILLED_REGION</drawtype>
+                                    <color>F57C00</color>
+                                    <item>
+                                        <host>Template important metrics</host>
+                                        <key>otus_important_metrics[{#METRICNAME}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                </discovery_rule>
+            </discovery_rules>
+        </template>
+    </templates>
+</zabbix_export>
