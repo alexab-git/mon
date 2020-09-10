@@ -1,0 +1,13 @@
+phantom:
+  address: 192.168.252.202:80
+  uris:
+    - /sample.php
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: line(10, 300, 190m) # starting from 1rps growing linearly to 10rps during 10 minutes
+    #schedule: const(1000, 35m)
+console:
+  enabled: true # enable console output
+telegraf:
+  enabled: false # let's disable telegraf monitoring for the first time
+
