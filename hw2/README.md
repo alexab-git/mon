@@ -10,3 +10,5 @@
 * [sample.php](sample.php)- скрипт для нагрузочного тестирования
 * [export.yml](export.yml) - конфигурационный файл для запуска докер-контейнера martinhelmich/prometheus-nginxlog-exporter 
 * [load.yaml](load.yaml) - конфигурационный файл для запуска генератора нагрузки yandex-tank
+* [prometheus.yml](prometheus.yml) - конфигурационный файл prometheus
+
