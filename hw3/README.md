@@ -1,6 +1,6 @@
 # HW3
 
-[Настройки datasource](screen0.png)
+[Настройки datasource c использованием victoriametrics](screen0.png)
 
 
 [Пример дашборда с использованием источника victoriametrics](screen1.png)
