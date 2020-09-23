@@ -1,0 +1,127 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 6,
+      "relation" : "eq"
+    },
+    "max_score" : 4.346349,
+    "hits" : [
+      {
+        "_index" : "rsyslog-2020.09.23",
+        "_type" : "rsyslog",
+        "_id" : "jOnBu3QBakVnivcrPIYN",
+        "_score" : 4.346349,
+        "_source" : {
+          "@version" : "1",
+          "sysloghost" : "prom",
+          "type" : "rsyslog",
+          "@timestamp" : "2020-09-23T16:17:16.000Z",
+          "host" : "127.0.0.1",
+          "facility" : "authpriv",
+          "procid" : "71641",
+          "severity" : "info",
+          "message" : " Accepted password for alex from 192.168.252.123 port 59652 ssh2",
+          "programname" : "sshd"
+        }
+      },
+      {
+        "_index" : "rsyslog-2020.09.23",
+        "_type" : "rsyslog",
+        "_id" : "j-nBu3QBakVnivcrPIYN",
+        "_score" : 4.346349,
+        "_source" : {
+          "@version" : "1",
+          "sysloghost" : "prom",
+          "type" : "rsyslog",
+          "@timestamp" : "2020-09-23T16:17:16.000Z",
+          "host" : "127.0.0.1",
+          "facility" : "authpriv",
+          "procid" : "71641",
+          "severity" : "info",
+          "message" : " pam_unix(sshd:session): session opened for user alex by (uid=0)",
+          "programname" : "sshd"
+        }
+      },
+      {
+        "_index" : "rsyslog-2020.09.23",
+        "_type" : "rsyslog",
+        "_id" : "kenBu3QBakVnivcrP4aR",
+        "_score" : 4.346349,
+        "_source" : {
+          "@version" : "1",
+          "sysloghost" : "prom",
+          "type" : "rsyslog",
+          "@timestamp" : "2020-09-23T16:17:18.000Z",
+          "host" : "127.0.0.1",
+          "facility" : "authpriv",
+          "procid" : "71641",
+          "severity" : "info",
+          "message" : " pam_unix(sshd:session): session closed for user alex",
+          "programname" : "sshd"
+        }
+      },
+      {
+        "_index" : "rsyslog-2020.09.23",
+        "_type" : "rsyslog",
+        "_id" : "GenSu3QBakVnivcr8ol1",
+        "_score" : 4.346349,
+        "_source" : {
+          "@version" : "1",
+          "sysloghost" : "prom",
+          "type" : "rsyslog",
+          "@timestamp" : "2020-09-23T16:36:37.000Z",
+          "host" : "127.0.0.1",
+          "facility" : "authpriv",
+          "procid" : "71702",
+          "severity" : "info",
+          "message" : " Accepted password for alex from 192.168.252.123 port 60373 ssh2",
+          "programname" : "sshd"
+        }
+      },
+      {
+        "_index" : "rsyslog-2020.09.23",
+        "_type" : "rsyslog",
+        "_id" : "HOnSu3QBakVnivcr8ol1",
+        "_score" : 4.346349,
+        "_source" : {
+          "@version" : "1",
+          "sysloghost" : "prom",
+          "type" : "rsyslog",
+          "@timestamp" : "2020-09-23T16:36:37.000Z",
+          "host" : "127.0.0.1",
+          "facility" : "authpriv",
+          "procid" : "71702",
+          "severity" : "info",
+          "message" : " pam_unix(sshd:session): session opened for user alex by (uid=0)",
+          "programname" : "sshd"
+        }
+      },
+      {
+        "_index" : "rsyslog-2020.09.23",
+        "_type" : "rsyslog",
+        "_id" : "H-nSu3QBakVnivcr-YkN",
+        "_score" : 4.346349,
+        "_source" : {
+          "@version" : "1",
+          "sysloghost" : "prom",
+          "type" : "rsyslog",
+          "@timestamp" : "2020-09-23T16:36:39.000Z",
+          "host" : "127.0.0.1",
+          "facility" : "authpriv",
+          "procid" : "71702",
+          "severity" : "info",
+          "message" : " pam_unix(sshd:session): session closed for user alex",
+          "programname" : "sshd"
+        }
+      }
+    ]
+  }
+}
