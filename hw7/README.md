@@ -1,8 +1,11 @@
 # HW7
 
 [Скришот логов, собранных при помощи heartbeat](screen0.png)
+
 [Скришот логов, собранных при помощи metricbeat](screen1.png)
+
 [Скришот логов, собранных при помощи filebeat](screen2.png)
+
 
 
 * [heartbeat.yml](heartbeat.yml)
