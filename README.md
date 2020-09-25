@@ -4,3 +4,4 @@
 * [HW4](hw4/README.md)
 * [HW5](hw5/README.md)
 * [HW6](hw6/README.md)
+* [HW7](hw7/README.md)
